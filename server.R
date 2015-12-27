@@ -1,8 +1,14 @@
 library(shiny)
+
+diameterCalc <- function(radius) radius * 2
+volumeCalc <- function(radius) ( (4 / 3) * pi * radius ^ 3)
+SACalc <- function(radius) ( 4 * pi * radius ^ 3 )
+
 shinyServer(
   function(input, output) {
-    output$oid1 <- renderPrint({input$id1})
-    output$oid2 <- renderPrint({input$id2})
-    output$odate <- renderPrint({input$date})
+    output$inputValue <- renderPrint({input$radius})
+    output$diameter <- renderPrint({diameterCalc(input$radius)})
+    output$volume <- renderPrint({volumeCalc(input$radius)})
+    output$SA <- renderPrint({SACalc(input$radius)})
   }
 )

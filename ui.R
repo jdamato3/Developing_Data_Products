@@ -1,23 +1,19 @@
 library(shiny)
 shinyUI(pageWithSidebar(
-  headerPanel("Data science FTW!"),
+  headerPanel("Spherical Specifications"),
   sidebarPanel(
-    numericInput('id1', 'Numeric input, labeled id1', 0, min = 0, max = 10, step = 1),
-    checkboxGroupInput("id2", "Checkbox",
-                       c("Value 1"= "1",
-                         "Value 2" = "2",
-                         "Value 3" = "3")),
-    dateInput("date", "Date:"),
-    h1('Sidebar panel'),
-    h3('Sidebar text')
+    numericInput('radius', 'Radius (unitless)', 0, min = 0, max = 100, step = 5),
+    submitButton('Submit')
   ),
   mainPanel(
-    h3('Illustrating outputs'),
-    h4('You entered'),
-    verbatimTextOutput("oid1"),
-    h4('You entered'),
-    verbatimTextOutput("oid2"),
-    h4('You entered'),
-    verbatimTextOutput("odate")
+    h3('Results'),
+    h4('Radius of Sphere Entered'),
+    verbatimTextOutput("inputValue"),
+    h4('Diameter of Sphere'),
+    verbatimTextOutput("diameter"),
+    h4('Volume of Sphere'),
+    verbatimTextOutput("volume"),
+    h4('Surface Area of Sphere'),
+    verbatimTextOutput("SA")
   )
 ))

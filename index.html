@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spherical Calculations</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Spherical Calculations">
+  <meta name="author" content="James D'Amato">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Spherical Calculations</h1>
+    <h2></h2>
+    <p>James D'Amato<br/>Analytics Engineer</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Spherical Calculations</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Based on the user&#39;s input of a radius through the API, the Shiny App will calculate the following attributes of a sphere:</p>
+
+<ul>
+<li>Diameter</li>
+<li>Volume</li>
+<li>Surface Area</li>
+</ul>
+
+<p>The Shiny App will also repeat the radius that the user entered in the results pane</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Diameter Calculation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The Shiny App calculates the diameter using the following formula:</p>
+
+<ul>
+<li>Diameter = 2r
+E.g if the radius is 2, then the diameter is:</li>
+</ul>
+
+<pre><code class="r">2 * 2
+</code></pre>
+
+<pre><code>## [1] 4
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Volume Calculation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The Shiny App also calculates the volume of a sphere using the following formula:</p>
+
+<ul>
+<li>Volume = (4/3) pi r ^ 3
+E.g. if the radius is 2, then the volume of the sphere is:</li>
+</ul>
+
+<pre><code class="r">(4/3)*pi*2^3
+</code></pre>
+
+<pre><code>## [1] 33.51032
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Surface Area Calculation</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Lastly, the Shiny App calculates the surface area of a sphere using the following formula:</p>
+
+<ul>
+<li>Surface Area = 4 pi r ^ 3
+E.g. if the radius of the sphere is 2, then the surface area of the sphere is:</li>
+</ul>
+
+<pre><code class="r">4 * pi * 2 ^ 3
+</code></pre>
+
+<pre><code>## [1] 100.531
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Spherical Calculations'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Diameter Calculation'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Volume Calculation'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Surface Area Calculation'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

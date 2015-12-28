@@ -1,0 +1,72 @@
+---
+title       : Spherical Calculations
+subtitle    : 
+author      : James D'Amato
+job         : Analytics Engineer
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Spherical Calculations
+
+Based on the user's input of a radius through the API, the Shiny App will calculate the following attributes of a sphere:
+* Diameter
+* Volume
+* Surface Area
+
+The Shiny App will also repeat the radius that the user entered in the results pane
+
+---
+
+## Diameter Calculation
+
+The Shiny App calculates the diameter using the following formula:
+* Diameter = 2r
+E.g if the radius is 2, then the diameter is:
+
+```r
+2 * 2
+```
+
+```
+## [1] 4
+```
+
+---
+
+## Volume Calculation
+
+The Shiny App also calculates the volume of a sphere using the following formula:
+* Volume = (4/3) pi r ^ 3
+E.g. if the radius is 2, then the volume of the sphere is:
+
+```r
+(4/3)*pi*2^3
+```
+
+```
+## [1] 33.51032
+```
+
+---
+
+## Surface Area Calculation
+
+Lastly, the Shiny App calculates the surface area of a sphere using the following formula:
+* Surface Area = 4 pi r ^ 3
+E.g. if the radius of the sphere is 2, then the surface area of the sphere is:
+
+```r
+4 * pi * 2 ^ 3
+```
+
+```
+## [1] 100.531
+```
+
+
+
